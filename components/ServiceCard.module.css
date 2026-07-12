@@ -1,0 +1,11 @@
+.card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+
+  transition: transform 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
