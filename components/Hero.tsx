@@ -9,8 +9,8 @@ export default function Hero() {
           <p className={styles.eyebrow}>Reliable. Skilled. Detail-focused.</p>
 
           <h1>
-            Property Management
-            <span> Practical Solutions</span>
+            Property Care
+            <span> Done Right</span>
           </h1>
 
           <p className={styles.description}>

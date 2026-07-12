@@ -1,17 +1,10 @@
 .hero {
-  min-height: 620px;
+  height: 650px;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(13, 27, 42, 0.98) 0%,
-      rgba(13, 27, 42, 0.9) 45%,
-      rgba(13, 27, 42, 0.55) 100%
-    ),
-    linear-gradient(135deg, #0d1b2a, #607d8b);
-
-  display: flex;
-  align-items: center;
+  background-image: url("/images/hero-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .overlay {
