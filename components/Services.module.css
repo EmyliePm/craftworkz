@@ -2,10 +2,15 @@
   padding: 100px 32px;
 }
 
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 32px;
 }
 
 @media (max-width: 900px) {

@@ -17,6 +17,7 @@ export default function Services() {
               key={service.title}
               title={service.title}
               description={service.description}
+              icon={service.icon}
             />
           ))}
         </div>
