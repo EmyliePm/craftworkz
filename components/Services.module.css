@@ -1,5 +1,5 @@
 .services {
-  padding: 100px 32px;
+  padding: 40px 32px 80px;
 }
 
 .container {
@@ -11,6 +11,31 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+}
+
+.heading {
+  margin: 0 0 4px;
+  text-align: left;
+  font-size: clamp(2rem, 3vw, 3rem);
+  color: var(--deep-navy);
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  margin: 12px 0 0;
+  background: var(--craft-red);
+}
+
+.description {
+  max-width: 900px;
+  text-align: left;
+  margin: 12px 0 28px;
+
+  color: var(--steel-grey);
+  line-height: 1.7;
 }
 
 @media (max-width: 900px) {

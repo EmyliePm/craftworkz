@@ -7,8 +7,8 @@ export default function Services() {
       <div className={styles.container}>
         <h2 className={styles.heading}>Our Services</h2>
         <p className={styles.description}>
-          Reliable property maintenance and handyman services for homeowners,
-          landlords and holiday lets
+          Reliable property maintenance and handyman services <br />
+          for homeowners, landlords and holiday lets
         </p>
 
         <div className={styles.grid}>

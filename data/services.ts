@@ -13,7 +13,7 @@ const services = [
   },
   {
     title: "Pool & Hot-tub maintenance",
-    description: "All your watery needs",
+    description: "Cleaning, servicing and water care",
     icon: Waves,
   },
   {
@@ -28,7 +28,7 @@ const services = [
   },
   {
     title: "Emergency Repairs",
-    description: "Gate got you good, eh?",
+    description: "Fast help when something goes wrong",
     icon: Siren,
   },
 ];
