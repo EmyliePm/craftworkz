@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 import styles from "./Services.module.css";
 export default function Services() {
   return (
-    <section className={styles.services}>
+    <section id="services" className={styles.services}>
       <div className="container">
         <h2 className={styles.heading}>Our Services</h2>
         <p className={styles.description}>

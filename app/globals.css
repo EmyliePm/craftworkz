@@ -50,3 +50,9 @@ input,
 textarea {
   font: inherit;
 }
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 100px;
+}

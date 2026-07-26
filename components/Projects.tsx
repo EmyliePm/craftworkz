@@ -4,7 +4,7 @@ import styles from "./Projects.module.css";
 
 export default function Projects() {
   return (
-    <section className={styles.projects} id="projects">
+    <section id="projects" className={styles.projects}>
       <div className="container">
         <h2 className={styles.heading}>Recent Work</h2>
 

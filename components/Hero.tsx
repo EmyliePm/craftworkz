@@ -3,7 +3,7 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
+    <section id="home" className={styles.hero}>
       <div className={styles.overlay}>
         <div className={`${styles.content} container`}>
           <p className={styles.eyebrow}>Reliable. Skilled. Detail-focused.</p>
