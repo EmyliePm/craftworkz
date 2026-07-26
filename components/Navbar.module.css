@@ -82,3 +82,23 @@
   background: transparent;
   color: var(--craft-red);
 }
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .logo {
+    width: 72px;
+  }
+
+  .quoteButton {
+    padding: 10px 14px;
+    font-size: 0.8rem;
+  }
+}

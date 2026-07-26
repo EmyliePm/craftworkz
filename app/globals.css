@@ -56,3 +56,8 @@ html {
 section {
   scroll-margin-top: 100px;
 }
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+}
