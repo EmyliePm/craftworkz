@@ -32,10 +32,6 @@ export default function Navbar() {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-
-        <a href="#contact" className={styles.quoteButton}>
-          Get a Quote
-        </a>
       </div>
     </nav>
   );
