@@ -1,18 +1,15 @@
 const projects = [
   {
-    title: "Bespoke Storage",
-    category: "Carpentry",
-    image: "/images/projects/bespoke-storage.jpg",
-  },
-  {
     title: "Garden Refresh",
     category: "Outdoor Maintenance",
-    image: "/images/projects/garden-refresh.jpg",
+    beforeImage: "/images/projects/gardenbefore.png",
+    afterImage: "/images/projects/gardenafter.png",
   },
   {
     title: "Property Repairs",
     category: "Property Maintenance",
-    image: "/images/projects/property-repairs.jpg",
+    beforeImage: "/images/projects/step1before.png",
+    afterImage: "/images/projects/step1after.png",
   },
 ];
 
