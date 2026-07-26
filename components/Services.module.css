@@ -1,10 +1,6 @@
 .services {
-  padding: 40px 32px 80px;
-}
-
-.container {
-  max-width: 1500px;
-  margin: 0 auto;
+  padding: 30px 32px 80px;
+  background: #f3f4f5;
 }
 
 .grid {
@@ -14,7 +10,8 @@
 }
 
 .heading {
-  margin: 0 0 4px;
+  margin-top: 0;
+  margin-bottom: 30px;
   text-align: left;
   font-size: clamp(2rem, 3vw, 3rem);
   color: var(--deep-navy);
@@ -30,9 +27,10 @@
 }
 
 .description {
-  max-width: 900px;
-  text-align: left;
+  max-width: 850px;
+  line-height: 1.6;
   margin: 12px 0 28px;
+  text-align: left;
 
   color: var(--steel-grey);
   line-height: 1.7;

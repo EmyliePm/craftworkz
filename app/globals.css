@@ -12,6 +12,11 @@
   --foreground: var(--deep-navy);
 }
 
+.container {
+  width: min(100% - 64px, 1500px);
+  margin: 0 auto;
+}
+
 * {
   box-sizing: border-box;
 }

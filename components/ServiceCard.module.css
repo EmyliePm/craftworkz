@@ -6,10 +6,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-
-  background: linear-gradient(135deg, white 0%, rgba(176, 183, 191, 0.24) 100%);
-
-  border: 1px solid rgba(13, 27, 42, 0.1);
+  background: #fff;
+  border: 1px solid #d8dde1;
+  box-shadow: 0 4px 18px rgba(10, 28, 43, 0.05);
   border-radius: 12px;
 
   overflow: hidden;
@@ -42,7 +41,7 @@
   height: 58px;
   flex-shrink: 0;
 
-  color: var(--slate-blue);
+  color: #545f64;
   opacity: 0.45;
   stroke-width: 1.5;
 
