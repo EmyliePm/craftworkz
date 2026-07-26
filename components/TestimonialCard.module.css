@@ -1,0 +1,48 @@
+.card {
+  position: relative;
+  padding: 34px;
+
+  background: #142638;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--craft-red);
+}
+
+.quoteMark {
+  display: block;
+
+  color: var(--craft-red);
+  font-family: Georgia, serif;
+  font-size: 4rem;
+  line-height: 0.7;
+}
+
+.quote {
+  margin: 24px 0 30px;
+
+  color: var(--light-steel);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.customer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.customer strong {
+  color: var(--light-steel);
+}
+
+.customer span {
+  color: var(--concrete);
+  font-size: 0.85rem;
+}
