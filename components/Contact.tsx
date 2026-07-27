@@ -1,11 +1,42 @@
+"use client";
+
+import { FormEvent, useState } from "react";
 import styles from "./Contact.module.css";
 
 export default function Contact() {
+  const [status, setStatus] = useState("");
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    setStatus("Sending...");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        setStatus("Thanks! Your enquiry has been sent.");
+        form.reset();
+      } else {
+        setStatus("Sorry, something went wrong. Please try again.");
+      }
+    } catch {
+      setStatus("Sorry, something went wrong. Please try again.");
+    }
+  }
+
   return (
     <section id="contact" className={styles.contact}>
       <div className="container">
         <div className={styles.headingBlock}>
           <h2>Contact Us</h2>
+
           <p>
             Tell us what you need, attach a few photos and we’ll get back to you
             as soon as possible.
@@ -13,7 +44,7 @@ export default function Contact() {
         </div>
 
         <div className={styles.layout}>
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.field}>
               <label htmlFor="name">Name</label>
               <input id="name" name="name" type="text" required />
@@ -35,7 +66,9 @@ export default function Contact() {
             </div>
 
             <div className={styles.field}>
-              <label htmlFor="images">Attach photos</label>
+              <label htmlFor="images">
+                Attach photos (up to 3, 15 MB total)
+              </label>
               <input
                 id="images"
                 name="images"
@@ -48,6 +81,8 @@ export default function Contact() {
             <button type="submit" className={styles.submitButton}>
               Send Enquiry
             </button>
+
+            {status && <p className={styles.statusMessage}>{status}</p>}
           </form>
 
           <aside className={styles.directContact}>
@@ -70,7 +105,7 @@ export default function Contact() {
             </a>
 
             <div className={styles.contactDetails}>
-              <span>Email: contact@cratfworkz.co.uk</span>
+              <span>Email: contact@craftworkz.co.uk</span>
             </div>
           </aside>
         </div>

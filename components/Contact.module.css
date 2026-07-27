@@ -125,7 +125,11 @@
   color: var(--concrete);
   font-size: 0.95rem;
 }
-
+.statusMessage {
+  margin: 0;
+  color: var(--steel-grey);
+  line-height: 1.5;
+}
 @media (max-width: 900px) {
   .layout {
     grid-template-columns: 1fr;
