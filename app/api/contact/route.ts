@@ -34,9 +34,9 @@ export async function POST(request: Request) {
     const email = String(formData.get("email") ?? "").trim();
     const message = String(formData.get("message") ?? "").trim();
 
-    if (!name || !message) {
+    if (!name || !email || !message) {
       return Response.json(
-        { error: "Name and message are required." },
+        { error: "Name, email and message are required." },
         { status: 400 },
       );
     }
@@ -92,10 +92,7 @@ export async function POST(request: Request) {
           ${escapeHtml(phone || "Not provided")}
         </p>
 
-        <p>
-          <strong>Email:</strong>
-          ${escapeHtml(email || "Not provided")}
-        </p>
+<p><strong>Email:</strong> ${escapeHtml(email)}</p>
 
         <p><strong>Message:</strong></p>
 

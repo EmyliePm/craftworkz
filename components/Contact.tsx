@@ -56,12 +56,22 @@ export default function Contact() {
             </div>
 
             <div className={styles.field}>
-              <label htmlFor="email">Email</label>
-              <input id="email" name="email" type="email" />
+              <label htmlFor="email">
+                Email address <span className={styles.required}>*</span>
+              </label>
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="you@example.com"
+              />
             </div>
 
             <div className={styles.field}>
               <label htmlFor="message">What can we help with?</label>
+
               <textarea id="message" name="message" rows={6} required />
             </div>
 
@@ -69,6 +79,7 @@ export default function Contact() {
               <label htmlFor="images">
                 Attach photos (up to 3, 15 MB total)
               </label>
+
               <input
                 id="images"
                 name="images"
@@ -77,6 +88,13 @@ export default function Contact() {
                 multiple
               />
             </div>
+
+            <p className={styles.formNote}>
+              <strong>* Required.</strong> Please provide an email address so we
+              can get back to you about your enquiry. Your details will only be
+              used to respond to your request and will never be shared with
+              third parties.
+            </p>
 
             <button type="submit" className={styles.submitButton}>
               Send Enquiry

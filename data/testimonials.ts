@@ -12,7 +12,7 @@ const testimonials = [
   {
     quote:
       "Quick response, clear communication and a really high standard of work.",
-    name: "Paul, Hull",
+    name: "Paul, Doncaster",
     detail: "Landlord Services",
   },
 ];
